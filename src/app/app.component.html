@@ -1,10 +1,10 @@
 <button (click)="buttonPush()">Push me!</button>
 <div class="flexContainer">
-  <app-record class="flexItem" *ngFor="let record of this.data" [record]="record"></app-record>
+  <app-record class="flexItem" *ngFor="let recordElement of this.data" [recordInput]="recordElement"></app-record>
   
   
-  @for (record of this.data; track record.firstName; let idx = $index, e = $even) {
-    <app-record class="flexItem" [record]="record"></app-record>
+  @for (recordElement of this.data; track recordElement.firstName; let idx = $index, e = $even) {
+    <app-record class="flexItem" [recordInput]="recordElement"></app-record>
     }
 
 

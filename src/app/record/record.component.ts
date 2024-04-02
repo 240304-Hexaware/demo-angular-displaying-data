@@ -10,9 +10,9 @@ import { FieldComponent } from '../field/field.component';
   styleUrl: './record.component.css'
 })
 export class RecordComponent {
-  @Input() record: Object = {};
+  @Input() recordInput: Object = {};
 
   getValues() {
-    return Object.values(this.record);
+    return Object.values(this.recordInput);
   }
 }
